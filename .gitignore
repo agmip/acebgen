@@ -1,6 +1,11 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+target/*
+*.swp
+.classpath
+.project
+.settings/*
+.DS_Store
+*.tmp
+nbactions.xml
+run.sh
+*.log
+/src/main/resources/git.properties

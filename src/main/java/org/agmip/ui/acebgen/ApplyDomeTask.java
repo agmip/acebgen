@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Scanner;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.ZipEntry;
@@ -25,8 +26,8 @@ public class ApplyDomeTask {
     private HashMap<String, Object> linkDomes = new HashMap<String, Object>();
     private HashMap<String, String> ovlLinks = new HashMap<String, String>();
     private HashMap<String, String> stgLinks = new HashMap<String, String>();
-    private HashMap<String, String> orgOvlLinks = new HashMap<String, String>();
-    private HashMap<String, String> orgStgLinks = new HashMap<String, String>();
+    private LinkedHashMap<String, String> orgOvlLinks = new LinkedHashMap<String, String>();
+    private LinkedHashMap<String, String> orgStgLinks = new LinkedHashMap<String, String>();
 //    private HashMap<String, ArrayList<String>> wthLinks = new HashMap<String, ArrayList<String>>();
 //    private HashMap<String, ArrayList<String>> soilLinks = new HashMap<String, ArrayList<String>>();
     private HashMap source;
