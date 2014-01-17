@@ -403,26 +403,11 @@ public class AcebGenCmd {
     }
 
     private void printHelp() {
-        System.out.println("\nThe arguments format : <option_compress> <option_overwrite> <dome_mode_option> <model_option> <convert_path> <link_path> <field_path> <strategy_path> <output_path>");
-//            System.out.println("\nThe arguments format : <dome_mode_option> <model_option> <convert_path> <field_path> <strategy_path> <output_path>");
-        System.out.println("\t<option_compress>");
-        System.out.println("\t\t-zip \tCompress the generated file into zip package.");
-        System.out.println("\t\t\tIf not provide, no compression will be done");
-        System.out.println("\t<option_overwrite>");
-        System.out.println("\t\t-clean \tClean model folder under the selected path.");
-        System.out.println("\t\t\tIf not provide, will choose new folder for particular model if the folder is filled with files.");
+        System.out.println("\nThe arguments format : <dome_mode_option> <convert_path> <link_path> <field_path> <strategy_path> <output_path>");
         System.out.println("\t<dome_mode_option>");
         System.out.println("\t\t-n | -none\tRaw Data Only, Default");
         System.out.println("\t\t-f | -filed\tField Overlay, will require Field Overlay File");
         System.out.println("\t\t-s | -strategy\tSeasonal Strategy, will require both Field Overlay and Strategy File");
-        System.out.println("\t<model_option>");
-        System.out.println("\t\t-D | -dssat\tDSSAT");
-        System.out.println("\t\t-A | -apsim\tAPSIM");
-        System.out.println("\t\t-S | -stics\tSTICS");
-        System.out.println("\t\t-W | -wofost\tWOFOST");
-        System.out.println("\t\t-C | -cropgrownau\tCropGrow-NAU");
-        System.out.println("\t\t-J | -json\tJSON");
-        System.out.println("\t\t* Could be combined input like -DAJ or -DJ");
         System.out.println("\t<convert_path>");
         System.out.println("\t\tThe path for file to be converted");
         System.out.println("\t<link_path>");
